@@ -22,3 +22,17 @@
 }());
 
 // Place any jQuery/helper plugins in here.
+
+// JQ-UI-ELEMENTS
+
+$(document).ready(function($) {
+
+
+    $("#myAccordion").accordion({
+        collapsible: true,
+        active: false
+    });
+
+
+});
+

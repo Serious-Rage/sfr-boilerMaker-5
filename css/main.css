@@ -11,7 +11,7 @@
    ========================================================================== */
 
 html {
-    color: ##FA050;
+    color:red;
     font-size: 1em;
     line-height: 1.4;
 }
@@ -103,16 +103,16 @@ body {
 
 .test-trigger {
     background-color:#000000;
-    color:lightblue;
-    width:140px;
+    color: #fbf10d;
+    width:200px;
     height:55px;
-    font-weight: bolder;
-    border: 2px solid darkblue;
+    font-weight: bold;
+    border: 2px solid red;
 }
 .test-trigger:hover {
     background-color:yellow;
     color:red;
-    width:140px;
+    width:200px;
     height:55px;
     font-weight: bolder;
     border: 2px groove palegreen;

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JavaScriptLibraryMappings">
+    <file url="PROJECT" libraries="{animation-frame-DefinitelyTyped, cli-DefinitelyTyped, fullpage.js-DefinitelyTyped, jQuery UI-1.10.2, jQuery-ui-1.11.1, jQuery-ui-1.12.1, vue-DefinitelyTyped}" />
+  </component>
+</project>

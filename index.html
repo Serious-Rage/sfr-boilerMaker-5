@@ -20,17 +20,19 @@
 
     <!-- STYLESHEETS - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - --->
 
-        <!--
+
         <link rel="stylesheet" href="js/vendor/jquery-ui-1.12/icing/themes/dark-hive/jquery-ui.min.css">
         <link rel="stylesheet" href="js/vendor/jquery-ui-1.12/icing/themes/dark-hive/theme.css">
-        -->
+       <!--
         <link rel="stylesheet" href="js/vendor/jquery-ui-1.11/jquery-ui.min.css">
         <link rel="stylesheet" href="js/vendor/jquery-ui-1.11/jquery-ui.theme.min.css">
+
+        -->
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - --->
 
-    <!-- MODERNIZER AND SFR-HELPERS  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+    <!-- MODERNIZER  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-        <script src="js/rage-include-helpers.js"></script>
+
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - --->
 
     </head>
@@ -43,9 +45,23 @@
         <h1>SFR-Web BoilerMaker.</h1>
         <hr>
         <br>
-        <p>test Helper</p>
-        <input class="test-trigger" type="button" onclick="rageHelper();" value="rageHelper">
 
+        <div id="myAccordion">
+            <h2><a href="#">Header 1</a></h2>
+            <div>
+                <p>Test if helper file connected</p>
+                <input class="test-trigger" type="button" onclick="rageHelper();" value="rageHelper">
+            </div>
+
+            <h2><a href="#">Header 2</a></h2>
+            <div>Etiam tincidunt est vitae est. Ut posuere, mauris at sodales rutrum, turpis tellus fermentum metus, ut
+                bibendum velit enim eu lectus. Suspendisse potenti.</div>
+
+            <h2><a href="#">Header 3</a></h2>
+            <div>Donec at dolor ac metus pharetra aliquam. Suspendisse purus. Fusce tempor ultrices libero. Sed
+                quis nunc. Pellentesque tincidunt viverra felis. Integer elit mauris, egestas ultricies, gravida vitae,
+                feugiat a, tellus.</div>
+        </div>
 
 
 
@@ -54,11 +70,12 @@
    <!--  <script src="js/vendor/jquery-ui-1.12/jquery-ui.min.js"></script> -->
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-ui-1.11/external/jquery/jquery.js"><\/script>')</script>
         <script src="js/vendor/jquery-ui-1.11/jquery-ui.min.js"></script>
-
-
-
         <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
+
+
+        <!-- include helpers and rage.js   -->
+        <script src="js/rage-include-helpers.js"></script>
+       <!-- <script src="js/main.js"></script> -->
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>

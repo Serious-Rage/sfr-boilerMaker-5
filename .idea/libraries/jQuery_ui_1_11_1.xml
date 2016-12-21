@@ -1,0 +1,22 @@
+<component name="libraryTable">
+  <library name="jQuery-ui-1.11.1" type="javaScript">
+    <properties>
+      <option name="frameworkName" value="jQuery UI" />
+      <option name="frameworkVersion" value="1.11" />
+      <sourceFilesUrls>
+        <item url="file://$PROJECT_DIR$/js/vendor/jquery-ui-1.11/jquery-ui.structure.min.css" />
+        <item url="file://$PROJECT_DIR$/js/vendor/jquery-ui-1.11/external/jquery/jquery.js" />
+        <item url="file://$PROJECT_DIR$/js/vendor/jquery-ui-1.11/jquery-ui.min.css" />
+        <item url="file://$PROJECT_DIR$/js/vendor/jquery-ui-1.11/jquery-ui.theme.min.css" />
+      </sourceFilesUrls>
+    </properties>
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/js/vendor/jquery-ui-1.11/jquery-ui.structure.min.css" />
+      <root url="file://$PROJECT_DIR$/js/vendor/jquery-ui-1.11/external/jquery/jquery.js" />
+      <root url="file://$PROJECT_DIR$/js/vendor/jquery-ui-1.11/jquery-ui.min.css" />
+      <root url="file://$PROJECT_DIR$/js/vendor/jquery-ui-1.11/jquery-ui.theme.min.css" />
+      <root url="file://$PROJECT_DIR$/js/vendor/jquery-ui-1.11/jquery-ui.min.js" />
+    </CLASSES>
+    <SOURCES />
+  </library>
+</component>

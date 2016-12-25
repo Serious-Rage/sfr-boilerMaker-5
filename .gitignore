@@ -2,6 +2,8 @@
 # Read about how to use .gitignore: https://help.github.com/articles/ignoring-files
 staged/
 tempHold/
+sfr-LESS
 
 .idea/deployment.xml
 .idea/encodings.xml
+.idea/dataSources/71ce27cd-6e05-4722-9c1c-e10e7df205a6/_staging_/

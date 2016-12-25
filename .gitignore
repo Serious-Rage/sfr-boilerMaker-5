@@ -4,3 +4,4 @@ staged/
 tempHold/
 
 .idea/deployment.xml
+.idea/encodings.xml

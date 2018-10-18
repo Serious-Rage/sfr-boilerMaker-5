@@ -9,8 +9,8 @@
 
 
 function rageHelper() {
-                        alert(" rageHelper has been fetched sucessfullt");
-         }
+    alert(" rageHelper has been fetched sucessfullt");
+}
 
 
 // more function and global variable definitions
@@ -45,12 +45,10 @@ function rageHelper() {
 
  */
 
-var SFR = function ($) {
+var SFR = (function ($) {
 
     var privateCounter = 0;
-    var URL_UI_inputs = (function ()
-
-    {
+    var URL_UI_inputs = (function () {
 
         (function
             () {
@@ -68,42 +66,41 @@ var SFR = function ($) {
 
             var newText = document.
 
-            getElementById("myInput").value;
+                getElementById("myInput").value;
 
             document.getElementById("stylesChanger")
 
                 .onclick = function () {
 
-                newText = document.
+                    newText = document.
 
-                getElementById("myInput").value;
+                        getElementById("myInput").value;
 
-                document.getElementById(
+                    document.getElementById(
 
-                    "myInput2").value = thing + newText + person;
+                        "myInput2").value = thing + newText + person;
 
-            }
+                }
 
         })();
 
-        (function ()
-            {
+        (function () {
 
-                var thing2 = "<img src=\"";
-                var person2 = "\" alt=\"Brandon\">";
-                var thingYY =
+            var thing2 = "<img src=\"";
+            var person2 = "\" alt=\"Brandon\">";
+            var thingYY =
 
-                    "<iframe width=\"1100\" height=\"720\" src=\"";
+                "<iframe width=\"1100\" height=\"720\" src=\"";
 
-                var personYY =
+            var personYY =
 
-                    "\" frameborder=\"1\" scrolling=\"yes\" allowfullscreen></iframe>";
+                "\" frameborder=\"1\" scrolling=\"yes\" allowfullscreen></iframe>";
 
-                var newText3 =
+            var newText3 =
 
-                    document.getElementById("myInputYY").value;
+                document.getElementById("myInputYY").value;
 
-                document.
+            document.
 
                 getElementById("stylesChanger3").onclick = function () {
 
@@ -111,42 +108,42 @@ var SFR = function ($) {
 
                     document.
 
-                    getElementById("myInputBB").
+                        getElementById("myInputBB").
 
                         value = thing2 + newText3 + person2;
 
                 }
 
-            }
+        }
         )();
 
         (function () {
-                var
-                    thing2 = "<img src=\"";
-                var person2 = "\" alt=\"badpic\">";
+            var
+                thing2 = "<img src=\"";
+            var person2 = "\" alt=\"badpic\">";
 
-                var thingYY = "<iframe width=\"1100\" height=\"720\" src=\"";
+            var thingYY = "<iframe width=\"1100\" height=\"720\" src=\"";
 
-                var personYY =
+            var personYY =
 
-                        "\" frameborder=\"1\" scrolling=\"yes\" allowfullscreen></iframe>"
+                "\" frameborder=\"1\" scrolling=\"yes\" allowfullscreen></iframe>"
 
-                    ;
+                ;
 
-                var newText2 = document.getElementById("myInputYY").value;
+            var newText2 = document.getElementById("myInputYY").value;
 
-                document.getElementById("stylesChanger2").onclick =
+            document.getElementById("stylesChanger2").onclick =
 
-                    function () {
+                function () {
 
-                        newText2 = document.getElementById("myInputYY").value;
-                        document.getElementById(
+                    newText2 = document.getElementById("myInputYY").value;
+                    document.getElementById(
 
 
-                            "myInputZZ").value = thingYY + newText2 + personYY;
+                        "myInputZZ").value = thingYY + newText2 + personYY;
 
-                    }
-            }
+                }
+        }
         )();
 
     });
@@ -166,14 +163,14 @@ var SFR = function ($) {
                 document.getElementsByClassName(
                     "noScrolling");
             NSdiv = NSdiv[0]
-            ;
+                ;
 
             var x =
                 document.createElement("IFRAME");
             x.
-            setAttribute('class', "inner");
+                setAttribute('class', "inner");
             x.
-            setAttribute('src', str);
+                setAttribute('src', str);
             x.setAttribute('scrolling', "no");
             x.setAttribute('seamless'
 
@@ -225,7 +222,7 @@ var SFR = function ($) {
     }
 
     function
-    closeNav() {
+        closeNav() {
 
         document.getElementById(
             "mySidenav").style.width = "0";
@@ -238,7 +235,7 @@ var SFR = function ($) {
 
     function
 
-    clsNav() {
+        clsNav() {
         closeNav();
     }
     // ****************************************************************************************
@@ -258,7 +255,7 @@ var SFR = function ($) {
     function
 
 
-    publicIncrement() {
+        publicIncrement() {
         privateFunction();
     }
 
@@ -268,7 +265,7 @@ var SFR = function ($) {
 
 
 
-// ********************************* webVid vidKey IIFE wip************************************
+    // ********************************* webVid vidKey IIFE wip************************************
     //<iframe width="510" height="400" src="http://xhamster.com/xembed.php?video=2492943" frameborder="0" scrolling="no" allowfullscreen></iframe>
     // IIFE TEMPLATE
 
@@ -289,7 +286,7 @@ var SFR = function ($) {
     function host(thatHost) {
 
         if (thatHost == "xh") {
-            return function(vidKey) {
+            return function (vidKey) {
                 var lead =
 
                     "<iframe width=\"510\" height=\"400\" src=\"http://xhamster.com/xembed.php?video=";
@@ -300,11 +297,11 @@ var SFR = function ($) {
             }
         }
 
-        return function(vidKey) {
+        return function (vidKey) {
             console.
 
 
-            log(whattosay + ' there ' + name);
+                log(whattosay + ' there ' + name);
         }
 
     }
@@ -331,17 +328,17 @@ var SFR = function ($) {
 
 
     return {
-        start:
-        publicFunction,
+        start: publicFunction,
         increment: publicIncrement,
         count: publicGetCount,
         mkFrm1: mkFrm1,
-
         opnNav: opnNav,
         clsNav: clsNav
     };
-}($);
+})($);
 
+
+SFR.mkFrm1("http://xhamster.com/xembed.php?video=3655311");
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 // *********************************************************************************

@@ -45,66 +45,66 @@ var SFR = function ($) {
 
                 .onclick = function () {
 
-                newText = document.getElementById("myInput").value;
+                    newText = document.getElementById("myInput").value;
 
-                document.getElementById(
-                    "myInput2").value = thing + newText + person;
+                    document.getElementById(
+                        "myInput2").value = thing + newText + person;
+
+                }
+
+        })();
+
+        (function () {
+
+            var thing2 = "<img src=\"";
+            var person2 = "\" alt=\"Brandon\">";
+            var thingYY =
+
+                "<iframe width=\"1100\" height=\"720\" src=\"";
+
+            var personYY =
+
+                "\" frameborder=\"1\" scrolling=\"yes\" allowfullscreen></iframe>";
+
+            var newText3 =
+
+                document.getElementById("myInputYY").value;
+
+            document.getElementById("stylesChanger3").onclick = function () {
+
+                newText3 = document.getElementById("myInputAA").value;
+
+                document.getElementById("myInputBB").value = thing2 + newText3 + person2;
 
             }
 
         })();
 
         (function () {
+            var
+                thing2 = "<img src=\"";
+            var person2 = "\" alt=\"badpic\">";
 
-                var thing2 = "<img src=\"";
-                var person2 = "\" alt=\"Brandon\">";
-                var thingYY =
+            var thingYY = "<iframe width=\"1100\" height=\"720\" src=\"";
 
-                    "<iframe width=\"1100\" height=\"720\" src=\"";
+            var personYY =
 
-                var personYY =
+                "\" frameborder=\"1\" scrolling=\"yes\" allowfullscreen></iframe>"
 
-                    "\" frameborder=\"1\" scrolling=\"yes\" allowfullscreen></iframe>";
+                ;
 
-                var newText3 =
+            var newText2 = document.getElementById("myInputYY").value;
 
-                    document.getElementById("myInputYY").value;
+            document.getElementById("stylesChanger2").onclick =
 
-                document.getElementById("stylesChanger3").onclick = function () {
+                function () {
 
-                    newText3 = document.getElementById("myInputAA").value;
-
-                    document.getElementById("myInputBB").value = thing2 + newText3 + person2;
+                    newText2 = document.getElementById("myInputYY").value;
+                    document.getElementById(
+                        "myInputZZ").value = thingYY + newText2 + personYY;
 
                 }
-
-            })();
-
-        (function () {
-                var
-                    thing2 = "<img src=\"";
-                var person2 = "\" alt=\"badpic\">";
-
-                var thingYY = "<iframe width=\"1100\" height=\"720\" src=\"";
-
-                var personYY =
-
-                        "\" frameborder=\"1\" scrolling=\"yes\" allowfullscreen></iframe>"
-
-                    ;
-
-                var newText2 = document.getElementById("myInputYY").value;
-
-                document.getElementById("stylesChanger2").onclick =
-
-                    function () {
-
-                        newText2 = document.getElementById("myInputYY").value;
-                        document.getElementById(
-                            "myInputZZ").value = thingYY + newText2 + personYY;
-
-                    }
-            })();
+        })();
 
     });
 
@@ -118,30 +118,17 @@ var SFR = function ($) {
             var Odiv = document.getElementsByClassName("outer");
             Odiv = Odiv[0];
 
-            var NSdiv =
+            var NSdiv = document.getElementsByClassName("noScrolling");
+            NSdiv = NSdiv[0];
 
-                document.getElementsByClassName(
-                    "noScrolling");
-            NSdiv = NSdiv[0]
-            ;
-
-            var x =
-                document.createElement("IFRAME");
+            var x = document.createElement("IFRAME");
             x.setAttribute('class', "inner");
             x.setAttribute('src', str);
             x.setAttribute('scrolling', "no");
-            x.setAttribute('seamless'
+            x.setAttribute('seamless', "seamless");
+            x.setAttribute('allowfullscreen', "allowfullscreen");
 
-                ,
-
-
-                "seamless");
-            x.setAttribute(
-                'allowfullscreen',
-                "allowfullscreen");
-
-            NSdiv.appendChild(
-                x);
+            NSdiv.appendChild(x);
 
         }
 
@@ -177,7 +164,7 @@ var SFR = function ($) {
     }
 
     function
-    closeNav() {
+        closeNav() {
 
         document.getElementById(
             "mySidenav").style.width = "0";
@@ -190,7 +177,7 @@ var SFR = function ($) {
 
     function
 
-    clsNav() {
+        clsNav() {
         closeNav();
     }
 
@@ -208,7 +195,7 @@ var SFR = function ($) {
     function
 
 
-    publicIncrement() {
+        publicIncrement() {
         privateFunction();
     }
 
@@ -217,7 +204,7 @@ var SFR = function ($) {
     }
 
 
-// ********************************* webVid vidKey IIFE wip************************************
+    // ********************************* webVid vidKey IIFE wip************************************
     //<iframe width="510" height="400" src="http://xhamster.com/xembed.php?video=2492943" frameborder="0" scrolling="no" allowfullscreen></iframe>
     // IIFE TEMPLATE
 
@@ -257,7 +244,7 @@ var SFR = function ($) {
     // ****************************************************************************************
 
 
-// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
     // *********************************************************************************
     // ************** CREATE ELEMENTS ********************
     // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -266,7 +253,7 @@ var SFR = function ($) {
     var addrss = 'http://www.google.co.uk';
 
 
-// Private
+    // Private
     function makeArticle(addrss) {
 
         var element = document.createElement('a');
@@ -279,7 +266,7 @@ var SFR = function ($) {
         document.body.appendChild(element);
     }
 
-// Public
+    // Public
     function ar_tickle(addrs) {
         makeArticle(addrss);
     }
@@ -314,12 +301,18 @@ var SFR = function ($) {
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 
+
+
+SFR.mkFrm1("http://xhamster.com/xembed.php?video=5899460");
+SFR.mkFrm1("http://xhamster.com/xembed.php?video=2492943");
+SFR.mkFrm1("http://xhamster.com/xembed.php?video=2649123");
+SFR.mkFrm1("http://xhamster.com/xembed.php?video=5386211");
+
 /* - - - - - - - - - - - - - - - - -  example calls - - - - - - -  - - - - - - - - -
 
 
 
  //SFR.start();
- SFR.mkFrm1("http://xhamster.com/xembed.php?video=3655311");
  SFR.mkFrm1("http://xhamster.com/xembed.php?video=5899460");
  SFR.mkFrm1("http://xhamster.com/xembed.php?video=2492943");
  SFR.mkFrm1("http://xhamster.com/xembed.php?video=2649123");
